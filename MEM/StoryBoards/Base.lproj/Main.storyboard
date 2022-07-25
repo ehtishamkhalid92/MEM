@@ -236,7 +236,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="15"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP0-0E-fTj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="137" height="15"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="129" height="15"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="15" id="uTZ-vu-2wm"/>
                                                                 </constraints>
@@ -244,9 +244,12 @@
                                                                 <color key="tintColor" red="0.44705882349999998" green="0.3921568627" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Forgot Password?"/>
+                                                                <connections>
+                                                                    <action selector="forgotPasswordButtonPressed:" destination="GUZ-2t-fFx" eventType="touchUpInside" id="Qow-88-2QH"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-Mw-EOI">
-                                                                <rect key="frame" x="137" y="0.0" width="261" height="15"/>
+                                                                <rect key="frame" x="129" y="0.0" width="269" height="15"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -269,13 +272,16 @@
                                                                 <integer key="value" value="8"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="loginButtonPressed:" destination="GUZ-2t-fFx" eventType="touchUpInside" id="efa-OA-uzd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wAS-1r-hIF">
-                                        <rect key="frame" x="89.5" y="449.5" width="235" height="20"/>
+                                        <rect key="frame" x="85.5" y="449.5" width="243" height="20"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-C1-hQB">
                                                 <rect key="frame" x="0.0" y="0.0" width="179" height="20"/>
@@ -284,12 +290,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtH-uz-7Ph">
-                                                <rect key="frame" x="179" y="0.0" width="56" height="20"/>
+                                                <rect key="frame" x="179" y="0.0" width="64" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Sign Up">
+                                                <state key="normal" title="  Sign Up">
                                                     <color key="titleColor" red="0.44705882349999998" green="0.3921568627" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signUpButtonPressed:" destination="GUZ-2t-fFx" eventType="touchUpInside" id="22O-Ws-if5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -380,6 +389,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="googleLoginButtonPressed:" destination="GUZ-2t-fFx" eventType="touchUpInside" id="ISf-qX-gWd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jot-ZQ-xL4">
                                                 <rect key="frame" x="0.0" y="65" width="314" height="50"/>
@@ -395,6 +407,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="appleLoginButtonPressed:" destination="GUZ-2t-fFx" eventType="touchUpInside" id="M3r-28-iqo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -423,6 +438,12 @@
                             <constraint firstItem="snw-v9-61U" firstAttribute="leading" secondItem="bB0-aq-OVP" secondAttribute="leading" id="wR3-B9-j5s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appleButton" destination="jot-ZQ-xL4" id="dgo-eN-JPz"/>
+                        <outlet property="emailTextField" destination="AhC-sP-3WC" id="BlZ-wT-oli"/>
+                        <outlet property="googleButton" destination="dOI-lO-l1J" id="JZn-Fh-sqz"/>
+                        <outlet property="passwordTextField" destination="Ceo-n1-dnm" id="myR-5h-CHl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEj-FT-flE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
