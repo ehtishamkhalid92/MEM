@@ -16,6 +16,7 @@
 		0A994935288EB0BF00C46948 /* MEMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994934288EB0BF00C46948 /* MEMUITests.swift */; };
 		0A994937288EB0BF00C46948 /* MEMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */; };
 		0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994948288EC09A00C46948 /* SceneDelegate.swift */; };
+		0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494B288EE37700C46948 /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A994934288EB0BF00C46948 /* MEMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITests.swift; sourceTree = "<group>"; };
 		0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A994948288EC09A00C46948 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
+		0A99494B288EE37700C46948 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0A994912288EB0BD00C46948 /* MEM */ = {
 			isa = PBXGroup;
 			children = (
+				0A99494A288EE36800C46948 /* Helper */,
 				0A994947288EBD2500C46948 /* StoryBoards */,
 				0A994946288EBD1C00C46948 /* Controller */,
 				0A994945288EBD1600C46948 /* View */,
@@ -157,6 +160,14 @@
 				0A994919288EB0BD00C46948 /* Main.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0A99494A288EE36800C46948 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0A99494B288EE37700C46948 /* UIExtensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */,
 				0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */,
 				0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */,
+				0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

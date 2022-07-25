@@ -147,6 +147,9 @@
                             <constraint firstItem="CTW-Pf-txb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vfT-Ib-cNz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getstartedButton" destination="2cd-OJ-7Wp" id="diB-sV-Q54"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
