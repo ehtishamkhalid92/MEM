@@ -99,10 +99,12 @@
 		0A994912288EB0BD00C46948 /* MEM */ = {
 			isa = PBXGroup;
 			children = (
+				0A994947288EBD2500C46948 /* StoryBoards */,
+				0A994946288EBD1C00C46948 /* Controller */,
+				0A994945288EBD1600C46948 /* View */,
+				0A994944288EBD0900C46948 /* Model */,
 				0A994913288EB0BD00C46948 /* AppDelegate.swift */,
 				0A994915288EB0BD00C46948 /* SceneDelegate.swift */,
-				0A994917288EB0BD00C46948 /* ViewController.swift */,
-				0A994919288EB0BD00C46948 /* Main.storyboard */,
 				0A99491C288EB0BF00C46948 /* Assets.xcassets */,
 				0A99491E288EB0BF00C46948 /* LaunchScreen.storyboard */,
 				0A994921288EB0BF00C46948 /* Info.plist */,
@@ -125,6 +127,36 @@
 				0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */,
 			);
 			path = MEMUITests;
+			sourceTree = "<group>";
+		};
+		0A994944288EBD0900C46948 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A994945288EBD1600C46948 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A994946288EBD1C00C46948 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A994917288EB0BD00C46948 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A994947288EBD2500C46948 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0A994919288EB0BD00C46948 /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
