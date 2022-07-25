@@ -21,7 +21,11 @@ class WelcomeVC: UIViewController {
 
     //MARK: Actions
     @IBAction func signInButtonPressed(_ sender: UIButton) {
-        
+        let SB = UIStoryboard(name: "Main", bundle: nil)
+        let vc = SB.instantiateViewController(identifier: "LoginVC") as! LoginVC
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func getStartedButtonPressed(_ sender: UIButton) {

@@ -17,6 +17,7 @@
 		0A994937288EB0BF00C46948 /* MEMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */; };
 		0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994948288EC09A00C46948 /* SceneDelegate.swift */; };
 		0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494B288EE37700C46948 /* UIExtensions.swift */; };
+		0A994950288F283C00C46948 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494F288F283C00C46948 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A994948288EC09A00C46948 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
 		0A99494B288EE37700C46948 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		0A99494F288F283C00C46948 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0A994917288EB0BD00C46948 /* WelcomeVC.swift */,
+				0A99494F288F283C00C46948 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */,
 				0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */,
 				0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */,
+				0A994950288F283C00C46948 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
