@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994913288EB0BD00C46948 /* AppDelegate.swift */; };
-		0A994916288EB0BD00C46948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994915288EB0BD00C46948 /* SceneDelegate.swift */; };
-		0A994918288EB0BD00C46948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994917288EB0BD00C46948 /* ViewController.swift */; };
+		0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994917288EB0BD00C46948 /* WelcomeVC.swift */; };
 		0A99491B288EB0BD00C46948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A994919288EB0BD00C46948 /* Main.storyboard */; };
 		0A99491D288EB0BF00C46948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A99491C288EB0BF00C46948 /* Assets.xcassets */; };
 		0A994920288EB0BF00C46948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A99491E288EB0BF00C46948 /* LaunchScreen.storyboard */; };
 		0A99492B288EB0BF00C46948 /* MEMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99492A288EB0BF00C46948 /* MEMTests.swift */; };
 		0A994935288EB0BF00C46948 /* MEMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994934288EB0BF00C46948 /* MEMUITests.swift */; };
 		0A994937288EB0BF00C46948 /* MEMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */; };
+		0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994948288EC09A00C46948 /* SceneDelegate.swift */; };
+		0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494B288EE37700C46948 /* UIExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,7 @@
 /* Begin PBXFileReference section */
 		0A994910288EB0BD00C46948 /* MEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A994913288EB0BD00C46948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A994915288EB0BD00C46948 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A994917288EB0BD00C46948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A994917288EB0BD00C46948 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		0A99491A288EB0BD00C46948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A99491C288EB0BF00C46948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A99491F288EB0BF00C46948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		0A994930288EB0BF00C46948 /* MEMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A994934288EB0BF00C46948 /* MEMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITests.swift; sourceTree = "<group>"; };
 		0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A994948288EC09A00C46948 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../../../../../.Trash/SceneDelegate.swift; sourceTree = "<group>"; };
+		0A99494B288EE37700C46948 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,13 @@
 		0A994912288EB0BD00C46948 /* MEM */ = {
 			isa = PBXGroup;
 			children = (
+				0A99494A288EE36800C46948 /* Helper */,
+				0A994947288EBD2500C46948 /* StoryBoards */,
+				0A994946288EBD1C00C46948 /* Controller */,
+				0A994945288EBD1600C46948 /* View */,
+				0A994944288EBD0900C46948 /* Model */,
 				0A994913288EB0BD00C46948 /* AppDelegate.swift */,
-				0A994915288EB0BD00C46948 /* SceneDelegate.swift */,
-				0A994917288EB0BD00C46948 /* ViewController.swift */,
-				0A994919288EB0BD00C46948 /* Main.storyboard */,
+				0A994948288EC09A00C46948 /* SceneDelegate.swift */,
 				0A99491C288EB0BF00C46948 /* Assets.xcassets */,
 				0A99491E288EB0BF00C46948 /* LaunchScreen.storyboard */,
 				0A994921288EB0BF00C46948 /* Info.plist */,
@@ -125,6 +130,44 @@
 				0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */,
 			);
 			path = MEMUITests;
+			sourceTree = "<group>";
+		};
+		0A994944288EBD0900C46948 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A994945288EBD1600C46948 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A994946288EBD1C00C46948 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A994917288EB0BD00C46948 /* WelcomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A994947288EBD2500C46948 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0A994919288EB0BD00C46948 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0A99494A288EE36800C46948 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0A99494B288EE37700C46948 /* UIExtensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A994918288EB0BD00C46948 /* ViewController.swift in Sources */,
+				0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */,
 				0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */,
-				0A994916288EB0BD00C46948 /* SceneDelegate.swift in Sources */,
+				0A994949288EC09A00C46948 /* SceneDelegate.swift in Sources */,
+				0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
