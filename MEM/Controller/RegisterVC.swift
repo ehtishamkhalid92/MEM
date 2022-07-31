@@ -24,11 +24,7 @@ class RegisterVC: UIViewController {
     
     //MARK: Actions
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        let SB = UIStoryboard(name: "Main", bundle: nil)
-        let vc = SB.instantiateViewController(identifier: "VerificationVC") as! VerificationVC
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        self.present(vc, animated: true, completion: nil)
+        
     }
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -39,4 +35,11 @@ class RegisterVC: UIViewController {
     
     //MARK: Functions
     
+}
+extension RegisterVC: UITextFieldDelegate{
+    func isValidEmail(email:String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
 }

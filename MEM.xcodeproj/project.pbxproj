@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A06DFCE288FF1830008A71E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06DFCD288FF1830008A71E /* RegisterVC.swift */; };
-		0A8F54AA288FFD5000ED1802 /* VerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8F54A9288FFD5000ED1802 /* VerificationVC.swift */; };
 		0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994913288EB0BD00C46948 /* AppDelegate.swift */; };
 		0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994917288EB0BD00C46948 /* WelcomeVC.swift */; };
 		0A99491B288EB0BD00C46948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A994919288EB0BD00C46948 /* Main.storyboard */; };
@@ -19,6 +18,13 @@
 		0A994937288EB0BF00C46948 /* MEMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */; };
 		0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494B288EE37700C46948 /* UIExtensions.swift */; };
 		0A994950288F283C00C46948 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99494F288F283C00C46948 /* LoginVC.swift */; };
+		0AEE8EB32896A0CB0050142B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AEE8EB22896A0CB0050142B /* GoogleService-Info.plist */; };
+		0AEE8EB52896A9780050142B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE8EB42896A9780050142B /* AlertViewController.swift */; };
+		0AEE8EB72896A9DF0050142B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE8EB62896A9DF0050142B /* UIColorExtensions.swift */; };
+		0AEE8EB92896AB830050142B /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE8EB82896AB830050142B /* ProgressHUD.swift */; };
+		0AEE8EBB2896ABA10050142B /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE8EBA2896ABA10050142B /* Toast.swift */; };
+		0AEE8EBD2896ABFB0050142B /* StringsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEE8EBC2896ABFB0050142B /* StringsExtension.swift */; };
+		8916D6892ADAA7A7254CE6E7 /* Pods_MEM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E91000F4E806257FDAFA19 /* Pods_MEM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		0A06DFCD288FF1830008A71E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		0A8F54A9288FFD5000ED1802 /* VerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
 		0A994910288EB0BD00C46948 /* MEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A994913288EB0BD00C46948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A994917288EB0BD00C46948 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -55,6 +60,15 @@
 		0A994936288EB0BF00C46948 /* MEMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A99494B288EE37700C46948 /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		0A99494F288F283C00C46948 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0AEE8EB22896A0CB0050142B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AEE8EB42896A9780050142B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		0AEE8EB62896A9DF0050142B /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		0AEE8EB82896AB830050142B /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		0AEE8EBA2896ABA10050142B /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		0AEE8EBC2896ABFB0050142B /* StringsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsExtension.swift; sourceTree = "<group>"; };
+		582D65507ED8D66319082315 /* Pods-MEM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEM.debug.xcconfig"; path = "Target Support Files/Pods-MEM/Pods-MEM.debug.xcconfig"; sourceTree = "<group>"; };
+		971D28CD4256D23CE462D785 /* Pods-MEM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEM.release.xcconfig"; path = "Target Support Files/Pods-MEM/Pods-MEM.release.xcconfig"; sourceTree = "<group>"; };
+		C8E91000F4E806257FDAFA19 /* Pods_MEM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8916D6892ADAA7A7254CE6E7 /* Pods_MEM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,7 @@
 				0A994913288EB0BD00C46948 /* AppDelegate.swift */,
 				0A99491C288EB0BF00C46948 /* Assets.xcassets */,
 				0A994921288EB0BF00C46948 /* Info.plist */,
+				0AEE8EB22896A0CB0050142B /* GoogleService-Info.plist */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -99,6 +115,8 @@
 				0A994929288EB0BF00C46948 /* MEMTests */,
 				0A994933288EB0BF00C46948 /* MEMUITests */,
 				0A994911288EB0BD00C46948 /* Products */,
+				B037BC200A97C749D901B833 /* Pods */,
+				B053F862FDC6ADDFC881BC8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,7 +180,6 @@
 				0A994917288EB0BD00C46948 /* WelcomeVC.swift */,
 				0A99494F288F283C00C46948 /* LoginVC.swift */,
 				0A06DFCD288FF1830008A71E /* RegisterVC.swift */,
-				0A8F54A9288FFD5000ED1802 /* VerificationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,8 +197,30 @@
 			isa = PBXGroup;
 			children = (
 				0A99494B288EE37700C46948 /* UIExtensions.swift */,
+				0AEE8EB42896A9780050142B /* AlertViewController.swift */,
+				0AEE8EB62896A9DF0050142B /* UIColorExtensions.swift */,
+				0AEE8EB82896AB830050142B /* ProgressHUD.swift */,
+				0AEE8EBA2896ABA10050142B /* Toast.swift */,
+				0AEE8EBC2896ABFB0050142B /* StringsExtension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B037BC200A97C749D901B833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				582D65507ED8D66319082315 /* Pods-MEM.debug.xcconfig */,
+				971D28CD4256D23CE462D785 /* Pods-MEM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B053F862FDC6ADDFC881BC8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E91000F4E806257FDAFA19 /* Pods_MEM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A99493A288EB0BF00C46948 /* Build configuration list for PBXNativeTarget "MEM" */;
 			buildPhases = (
+				4DE17EE3A7C309E77AE44943 /* [CP] Check Pods Manifest.lock */,
 				0A99490C288EB0BD00C46948 /* Sources */,
 				0A99490D288EB0BD00C46948 /* Frameworks */,
 				0A99490E288EB0BD00C46948 /* Resources */,
+				14980081D52965BD907B30D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A994920288EB0BF00C46948 /* LaunchScreen.storyboard in Resources */,
+				0AEE8EB32896A0CB0050142B /* GoogleService-Info.plist in Resources */,
 				0A99491D288EB0BF00C46948 /* Assets.xcassets in Resources */,
 				0A99491B288EB0BD00C46948 /* Main.storyboard in Resources */,
 			);
@@ -310,17 +352,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14980081D52965BD907B30D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEM/Pods-MEM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEM/Pods-MEM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEM/Pods-MEM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE17EE3A7C309E77AE44943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MEM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A99490C288EB0BD00C46948 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */,
+				0AEE8EB52896A9780050142B /* AlertViewController.swift in Sources */,
+				0AEE8EB92896AB830050142B /* ProgressHUD.swift in Sources */,
 				0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */,
 				0A06DFCE288FF1830008A71E /* RegisterVC.swift in Sources */,
-				0A8F54AA288FFD5000ED1802 /* VerificationVC.swift in Sources */,
+				0AEE8EBD2896ABFB0050142B /* StringsExtension.swift in Sources */,
 				0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */,
+				0AEE8EBB2896ABA10050142B /* Toast.swift in Sources */,
 				0A994950288F283C00C46948 /* LoginVC.swift in Sources */,
+				0AEE8EB72896A9DF0050142B /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +580,7 @@
 		};
 		0A99493B288EB0BF00C46948 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582D65507ED8D66319082315 /* Pods-MEM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -520,6 +609,7 @@
 		};
 		0A99493C288EB0BF00C46948 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971D28CD4256D23CE462D785 /* Pods-MEM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
