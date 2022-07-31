@@ -29,7 +29,11 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func getStartedButtonPressed(_ sender: UIButton) {
-        
+        let SB = UIStoryboard(name: "Main", bundle: nil)
+        let vc = SB.instantiateViewController(identifier: "RegisterVC") as! RegisterVC
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true, completion: nil)
     }
     
     //MARK: Function
