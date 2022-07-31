@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseCore
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         /// Firebase Configure
         FirebaseApp.configure()
+        
+        /// UI Setup
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableDebugging = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
+        UISearchBar.appearance().tintColor = UIColor(hexString: "#424242")
+        UITextField.appearance().tintColor = UIColor(hexString: "#c5c5c5")
+        
+        UITextField.appearance().tintColor = .black
         return true
     }
     

@@ -10,14 +10,6 @@ target 'MEM' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
-  target 'MEMTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MEMUITests' do
-    # Pods for testing
-  end
+  pod 'IQKeyboardManagerSwift'
 
 end
