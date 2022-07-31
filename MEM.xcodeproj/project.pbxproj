@@ -40,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		0A06DFCD288FF1830008A71E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		0A0A240D28969B9A0006AF9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A8F54A9288FFD5000ED1802 /* VerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationVC.swift; sourceTree = "<group>"; };
 		0A994910288EB0BD00C46948 /* MEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A994913288EB0BD00C46948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				0A994913288EB0BD00C46948 /* AppDelegate.swift */,
-				0A0A240D28969B9A0006AF9A /* SceneDelegate.swift */,
 				0A99491C288EB0BF00C46948 /* Assets.xcassets */,
 				0A994921288EB0BF00C46948 /* Info.plist */,
 			);
