@@ -12,8 +12,8 @@ extension UITextField{
     func roundAndBackgroundColorField(){
         self.layer.cornerRadius = 18
         self.layer.borderWidth = 1
-        self.layer.borderColor = #colorLiteral(red: 0.2352941176, green: 0.7019607843, blue: 0.4431372549, alpha: 1)
-        self.layer.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
+        self.layer.borderColor = #colorLiteral(red: 0.4470588235, green: 0.3921568627, blue: 0.8980392157, alpha: 1)
+//        self.layer.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9764705882, blue: 0.9764705882, alpha: 1)
     }
     
     func UISetupToTextField() {

@@ -459,7 +459,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTG-wg-dGG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="717"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="soM-hI-Wgw">
                                         <rect key="frame" x="8" y="112" width="398" height="492.5"/>
@@ -631,10 +631,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0NP-98-O6G">
-                                <rect key="frame" x="0.0" y="805" width="414" height="57"/>
+                                <rect key="frame" x="0.0" y="761" width="414" height="101"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-PY-Rbt">
-                                        <rect key="frame" x="76.5" y="-11" width="261" height="48"/>
+                                        <rect key="frame" x="76.5" y="33" width="261" height="48"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By clicking Register you agree to our" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qns-mi-uKc">
                                                 <rect key="frame" x="0.0" y="0.0" width="261" height="18"/>
@@ -687,25 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SC5-2e-vPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="119"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Wlk-XU-WrP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M1M-NZ-b0L" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WIP-53-TPD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="STa-yV-3Rp" kind="relationship" relationship="rootViewController" id="3VC-lv-LSf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MdU-Ge-4PX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1433" y="119"/>
+            <point key="canvasLocation" x="1438" y="119"/>
         </scene>
         <!--Alert View Controller-->
         <scene sceneID="c8t-08-NpX">
