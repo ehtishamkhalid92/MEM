@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterVC: UIViewController {
    
@@ -21,13 +22,20 @@ class RegisterVC: UIViewController {
     private let pickerView = UIPickerView()
     private lazy var arrOfCountriesWithTheirValues = [CountryCodeModel]()
     private var selectedCountryCode :String?
+    
     var user = UserModel()
+    
+    private var ref: DatabaseReference!
+    private var progressIndicator = ProgressHUD(text: "Please wait...")
     
     //MARK: View Life Cycle.
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCountryPicker()
         UISetup()
+        
+        //Firebase
+        ref = Database.database().reference()
     }
     
     //MARK: Actions
@@ -109,6 +117,35 @@ class RegisterVC: UIViewController {
         }
         return String(s)
     }
+    
+    //MARK: Networking
+    
+    ///Email Authentication
+    private func AuthenticateEmail() {
+        self.view.addSubview(progressIndicator)
+        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { authResult, error in
+            self.progressIndicator.removeFromSuperview()
+            if let error = error as NSError? {
+                switch AuthErrorCode(error.code) {
+                case .operationNotAllowed:
+                    showAlert(title: "Operation Not Allowed", message: "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section", controller: self)
+                case .emailAlreadyInUse:
+                    showAlert(title: "Email Already In Use", message: "The email address is already in use by another account", controller: self)
+                case .invalidEmail:
+                    showAlert(title: "Invalid Email", message: "The email address is badly formatted", controller: self)
+                case .weakPassword:
+                    showAlert(title: "Weak Password", message: "The password must be 6 characters long or more", controller: self)
+                default:
+                    showAlert(title: "Registration", message: "Error: \(error.localizedDescription)", controller: self)
+                }
+            } else {
+                let newUserInfo = Auth.auth().currentUser
+                let userId = newUserInfo?.uid
+                self.user.userId = userId!
+            }
+        }
+    }
+    
     
 }
 extension RegisterVC: UITextFieldDelegate{
