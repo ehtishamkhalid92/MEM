@@ -8,6 +8,7 @@
 import UIKit
 
 class RegisterVC: UIViewController {
+   
 
     //MARK: Properties.
     @IBOutlet weak var passwordTextField: UITextField!
@@ -31,7 +32,7 @@ class RegisterVC: UIViewController {
     
     //MARK: Actions
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        
+        validation()
     }
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -41,12 +42,35 @@ class RegisterVC: UIViewController {
     }
     
     //MARK: Functions
+    private func validation() {
+        if nameTextField.text!.isEmpty{
+            nameTextField.becomeFirstResponder()
+        }else if emailTextField.text!.isEmpty{
+            emailTextField.becomeFirstResponder()
+        }else if !isValidEmail(email: emailTextField.text!){
+            showAlert(title: "Wrong email format!", message: "Email that you have entered have bad format. Please enter a valid email address. Thank you!", controller: self)
+        }else if countryCodeTextfield.text!.isEmpty{
+            countryCodeTextfield.becomeFirstResponder()
+        }else if phoneTextField.text!.isEmpty{
+            phoneTextField.becomeFirstResponder()
+        }else if passwordTextField.text!.isEmpty{
+            passwordTextField.becomeFirstResponder()
+        }else {
+            //Apply API
+            
+        }
+    }
+    
     private func UISetup(){
         passwordTextField.UISetupToTextField()
         emailTextField.UISetupToTextField()
         nameTextField.UISetupToTextField()
         phoneTextField.UISetupToTextField()
         countryCodeTextfield.UISetupToTextField()
+        passwordTextField.delegate = self
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        
     }
     private func setupCountryPicker() {
         
@@ -92,6 +116,30 @@ extension RegisterVC: UITextFieldDelegate{
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
+    }
+    func isValidatePassword(_ password: String) -> Bool {
+        //At least 8 characters
+        if password.count < 8 {
+            return false
+        }
+        //At least one digit
+        if password.range(of: #"\d+"#, options: .regularExpression) == nil {
+            return false
+        }
+        //At least one letter
+        if password.range(of: #"\p{Alphabetic}+"#, options: .regularExpression) == nil {
+            return false
+        }
+        //No whitespace charcters
+        if password.range(of: #"\s+"#, options: .regularExpression) != nil {
+            return false
+        }
+
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 extension RegisterVC: UIPickerViewDelegate, UIPickerViewDataSource {

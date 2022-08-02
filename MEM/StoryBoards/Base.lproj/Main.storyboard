@@ -499,7 +499,7 @@
                                                                     <constraint firstAttribute="height" constant="55" id="ThI-c5-c2p"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -854,7 +854,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jm-cq-R02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-959.4202898550725" y="54.910714285714285"/>
+            <point key="canvasLocation" x="-965" y="119"/>
         </scene>
     </scenes>
     <resources>

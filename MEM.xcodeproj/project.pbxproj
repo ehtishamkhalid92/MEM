@@ -143,7 +143,6 @@
 				0A99494A288EE36800C46948 /* Helper */,
 				0A994947288EBD2500C46948 /* StoryBoards */,
 				0A994946288EBD1C00C46948 /* Controller */,
-				0A994945288EBD1600C46948 /* View */,
 				0A994944288EBD0900C46948 /* Model */,
 			);
 			path = MEM;
@@ -173,13 +172,6 @@
 				0AEE8EC02896B8C40050142B /* CountryCodeModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0A994945288EBD1600C46948 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0A994946288EBD1C00C46948 /* Controller */ = {
