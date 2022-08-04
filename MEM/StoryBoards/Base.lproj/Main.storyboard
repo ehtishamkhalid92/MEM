@@ -469,12 +469,39 @@
         <!--Home-->
         <scene sceneID="rbi-ck-zxy">
             <objects>
-                <viewController id="Gbf-2j-AXw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Gbf-2j-AXw" customClass="HomeViewController" customModule="MEM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="19P-gD-8vr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlf-7l-FqO">
+                                <rect key="frame" x="20" y="74" width="374" height="55"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.3921568627" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="oEx-zw-uUX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="Gbf-2j-AXw" eventType="touchUpInside" id="3Wr-WG-akZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zcp-nm-0Mf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zcp-nm-0Mf" firstAttribute="trailing" secondItem="Qlf-7l-FqO" secondAttribute="trailing" constant="20" id="BNC-hG-VuM"/>
+                            <constraint firstItem="Qlf-7l-FqO" firstAttribute="top" secondItem="zcp-nm-0Mf" secondAttribute="top" constant="30" id="akb-T1-ekM"/>
+                            <constraint firstItem="Qlf-7l-FqO" firstAttribute="leading" secondItem="zcp-nm-0Mf" secondAttribute="leading" constant="20" id="fh6-TQ-6hq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="cn8-hc-tC4"/>
                 </viewController>
@@ -482,10 +509,10 @@
             </objects>
             <point key="canvasLocation" x="-583" y="2286"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="XAk-br-e66">
             <objects>
-                <tabBarController id="Td7-s7-ikW" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="Td7-s7-ikW" customClass="TabBarVC" customModule="MEM" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zAI-wO-vay">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

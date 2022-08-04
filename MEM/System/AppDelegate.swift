@@ -36,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITextField.appearance().tintColor = UIColor(hexString: "#c5c5c5")
         
         UITextField.appearance().tintColor = .black
+        
+        SessionManager.instance.loginData()
         return true
     }
     

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A06DFCE288FF1830008A71E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06DFCD288FF1830008A71E /* RegisterVC.swift */; };
 		0A62FB7B289B9481003E0060 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62FB7A289B9481003E0060 /* SessionManager.swift */; };
+		0A62FB7D289BA238003E0060 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62FB7C289BA238003E0060 /* TabBarVC.swift */; };
+		0A62FB7F289BA39F003E0060 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62FB7E289BA39F003E0060 /* HomeViewController.swift */; };
 		0A994914288EB0BD00C46948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994913288EB0BD00C46948 /* AppDelegate.swift */; };
 		0A994918288EB0BD00C46948 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A994917288EB0BD00C46948 /* WelcomeVC.swift */; };
 		0A99491B288EB0BD00C46948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A994919288EB0BD00C46948 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		0A06DFCD288FF1830008A71E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		0A62FB7A289B9481003E0060 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		0A62FB7C289BA238003E0060 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		0A62FB7E289BA39F003E0060 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0A994910288EB0BD00C46948 /* MEM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A994913288EB0BD00C46948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A994917288EB0BD00C46948 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				0A994917288EB0BD00C46948 /* WelcomeVC.swift */,
 				0A99494F288F283C00C46948 /* LoginVC.swift */,
 				0A06DFCD288FF1830008A71E /* RegisterVC.swift */,
+				0A62FB7C289BA238003E0060 /* TabBarVC.swift */,
+				0A62FB7E289BA39F003E0060 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -410,9 +416,11 @@
 				0A06DFCE288FF1830008A71E /* RegisterVC.swift in Sources */,
 				0AEE8EBD2896ABFB0050142B /* StringsExtension.swift in Sources */,
 				0A62FB7B289B9481003E0060 /* SessionManager.swift in Sources */,
+				0A62FB7D289BA238003E0060 /* TabBarVC.swift in Sources */,
 				0A99494C288EE37700C46948 /* UIExtensions.swift in Sources */,
 				0AEE8EC32896BA4B0050142B /* UITextFieldExtension.swift in Sources */,
 				0AEE8EBB2896ABA10050142B /* Toast.swift in Sources */,
+				0A62FB7F289BA39F003E0060 /* HomeViewController.swift in Sources */,
 				0A994950288F283C00C46948 /* LoginVC.swift in Sources */,
 				0AEE8EC12896B8C40050142B /* CountryCodeModel.swift in Sources */,
 				0AEE8EB72896A9DF0050142B /* UIColorExtensions.swift in Sources */,
