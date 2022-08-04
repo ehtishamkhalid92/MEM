@@ -23,8 +23,6 @@ class RegisterVC: UIViewController {
     private lazy var arrOfCountriesWithTheirValues = [CountryCodeModel]()
     private var selectedCountryCode :String?
     
-    var user = UserModel()
-    
     private var ref: DatabaseReference!
     private var progressIndicator = ProgressHUD(text: "Please wait...")
     
@@ -35,7 +33,8 @@ class RegisterVC: UIViewController {
         UISetup()
         
         //Firebase
-        ref = Database.database().reference()
+//        ref = Database.database().reference()
+        ref = Database.database(url: firebaseDatabaseURL).reference()
     }
     
     //MARK: Actions
@@ -65,7 +64,7 @@ class RegisterVC: UIViewController {
             passwordTextField.becomeFirstResponder()
         }else {
             //Apply API
-            
+            AuthenticateEmail()
         }
     }
     
@@ -123,25 +122,48 @@ class RegisterVC: UIViewController {
     ///Email Authentication
     private func AuthenticateEmail() {
         self.view.addSubview(progressIndicator)
-        Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { authResult, error in
-            self.progressIndicator.removeFromSuperview()
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { authResult, error in
             if let error = error as NSError? {
-                switch AuthErrorCode(error.code) {
-                case .operationNotAllowed:
+                switch error.code {
+                case AuthErrorCode.operationNotAllowed.rawValue:
                     showAlert(title: "Operation Not Allowed", message: "The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section", controller: self)
-                case .emailAlreadyInUse:
+                case AuthErrorCode.emailAlreadyInUse.rawValue:
                     showAlert(title: "Email Already In Use", message: "The email address is already in use by another account", controller: self)
-                case .invalidEmail:
+                case AuthErrorCode.invalidEmail.rawValue:
                     showAlert(title: "Invalid Email", message: "The email address is badly formatted", controller: self)
-                case .weakPassword:
+                case AuthErrorCode.weakPassword.rawValue:
                     showAlert(title: "Weak Password", message: "The password must be 6 characters long or more", controller: self)
                 default:
                     showAlert(title: "Registration", message: "Error: \(error.localizedDescription)", controller: self)
                 }
-            } else {
+            }else {
                 let newUserInfo = Auth.auth().currentUser
                 let userId = newUserInfo?.uid
-                self.user.userId = userId!
+                self.addUserData(userId: userId!)
+            }
+        }
+    }
+    
+    private func addUserData(userId : String) {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = df.string(from: Date())
+        let dict :[String:Any] = [
+            "userId" : userId,
+            "createdDate" : date,
+            "name" : nameTextField.text!,
+            "email" : emailTextField.text!,
+            "countryCode" : countryCodeTextfield.text!,
+            "phone" : phoneTextField.text!
+        ]
+        print("Data to be save: \(dict)")
+        self.ref.child("USER").child(userId).setValue(dict) { err, dbRef in
+            self.progressIndicator.removeFromSuperview()
+            if err == nil {
+                showAlertView(alertType: .success, title: "Registration", message: "Account Register Sucessfully", controller: self)
+                SessionManager.instance.loginData()
+            }else{
+                showAlert(title: "Registration", message: "Error: \(err?.localizedDescription ?? "")", controller: self)
             }
         }
     }

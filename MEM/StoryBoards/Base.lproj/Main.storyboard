@@ -450,6 +450,56 @@
             </objects>
             <point key="canvasLocation" x="671" y="119"/>
         </scene>
+        <!--Reports-->
+        <scene sceneID="dJt-Jz-p2O">
+            <objects>
+                <viewController id="1Oe-LM-03f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VjV-qD-srG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bxX-3J-pSk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reports" id="QtV-Nv-13F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdl-hs-dbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="2324"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="rbi-ck-zxy">
+            <objects>
+                <viewController id="Gbf-2j-AXw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="19P-gD-8vr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zcp-nm-0Mf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="cn8-hc-tC4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Pm-iJ-Y0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="2286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XAk-br-e66">
+            <objects>
+                <tabBarController id="Td7-s7-ikW" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zAI-wO-vay">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gbf-2j-AXw" kind="relationship" relationship="viewControllers" id="upT-DH-j7e"/>
+                        <segue destination="1Oe-LM-03f" kind="relationship" relationship="viewControllers" id="ghM-cC-ZcX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icu-B1-WW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="1475"/>
+        </scene>
         <!--RegisterVC-->
         <scene sceneID="aeL-ig-7sd">
             <objects>
@@ -499,7 +549,7 @@
                                                                     <constraint firstAttribute="height" constant="55" id="ThI-c5-c2p"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -518,7 +568,7 @@
                                                                     <constraint firstAttribute="height" constant="55" id="Dj0-dC-hgG"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -567,7 +617,7 @@
                                                                     <constraint firstAttribute="height" constant="55" id="i54-A7-3jM"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>

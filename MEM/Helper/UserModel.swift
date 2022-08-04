@@ -13,4 +13,7 @@ struct UserModel:Codable {
     var name = String()
     var countryCode = String()
     var phoneNumber = String()
+    var date = String()
+    var isEmailVerified = Bool()
+    var isPhoneVerified = Bool()
 }
